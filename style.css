@@ -1,0 +1,14 @@
+body{
+   
+
+}
+.container p{
+    text-transform: uppercase;
+}
+
+.container i{
+    padding-right: 200px;
+}
+.bg-light{
+     opacity: 0.9;
+}

@@ -4,6 +4,7 @@
  * -Lương 1 ngày 100.000
  * Xử lý
  * - tạo biến Tổng  tong = 0;
+ * - tao bien numberDay 
  * - tạo biến oneDay = 100.000
  * - Dom tới nút Tính 
  * - Dom tới numberDay
@@ -11,13 +12,13 @@
  * -  tong = oneDay * numberDay
  */
 
-var oneDay = 100000;
 var tong = 0;
 
 var btnSalary = document.getElementById("btnSalary");
 btnSalary.onclick = function () {
     var numberDay = document.getElementById("numberDay").value;
-    tong = numberDay * oneDay ;
+    var numberMonney = document.getElementById("numberMonney").value;
+    tong = numberDay * numberMonney ;
    
     ketQua = "ket qua la :" + tong;
     var divThongBao = document.getElementById("thongBao");

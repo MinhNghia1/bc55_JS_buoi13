@@ -9,6 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
+    <!-- font cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Link css js  -->
     <link rel="stylesheet" href="./style.css">
     
@@ -16,47 +19,59 @@
   <body>
     
     <!-- bai 1 tính lương nhân viên -->
-    <p>nhập số ngày làm</p>
-    <input id="numberDay" type="number" value="1" />
+    <div class="container bg-warning text-center">
+    <p >nhập số ngày làm</p>
+
+    <input id="numberDay" placeholder="Nhập số ngày làm" type="number" value="" />
+    <input id="numberMonney" placeholder="Nhập số tiền" type="number" value="" />
     <div id="btnSalary" class="btn btn-success">Tính</div>
     <div id="thongBao"></div>
+    
+    </div>
 
     <!-- Tính giá trị trung bình  -->
-    <p>Nhập vào só thực </p>
+    <div class="container text-center bg-warning my-5">
+      <p>Nhập vào só thực </p>
     <input id="tbNumber1" type="number" value="1" />
     <input id="tbNumber2" type="number" value="1" />
     <input id="tbNumber3" type="number" value="1" />
     <input id="tbNumber4" type="number" value="1" />
     <input id="tbNumber5" type="number" value="1" />
-    <div id="btnTrungBinh" class="btn btn-dark">Tính</div>
+    <div id="btnTrungBinh" class="btn btn-success">Tính</div>
     <div id="thongBaoTB"></div>
+    </div>
 
     <!-- Quy đổi tiền  -->
-    <p>nhập số tiền </p>
+    <div class="container text-center bg-warning my-5">
+      <p>nhập số tiền </p>
     <input id="moneyUSD" type="number" value="1" />
     <div id="btnUSD" class="btn btn-success">Tính</div>
     <div id="thongBaoVND"></div>
-
+    </div>
     <!-- Tính diện tích và chu vi hình chữ nhật  -->
-    <p>nhập chiều dài và chiều rộng</p>
+    <div class="container text-center bg-warning my-5">
+      <p>nhập chiều dài và chiều rộng</p>
     <input id="chieuDai" placeholder="chiều dài" type="number" value="" />
     <input id="chieuRong" placeholder="chiều rộng" type="number" value="" />
     <div id="btnHCN" class="btn btn-success">Tính</div>
     <div id="thongBaoCV"></div>
     <div id="thongBaoDT"></div>
+    </div>
 
     <!-- Tính tổng 2 ký số vừa nhập  -->
-    <p>nhập vào số có 2 chữ số</p>
+    <div class="container text-center bg-warning my-5">
+      <p>nhập vào số có 2 chữ số</p>
     <input id="numberKySo" type="number" value="1"/>
-    <button id="btnKySo" class="btn btn-secondary">TONG</button>
+    <button id="btnKySo" class="btn btn-success">TONG</button>
     <div id="thongBaoKySo"></div>
+    </div>
 
 
     <!-- file js  -->
     <script src="./index.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jqu ery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
